@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="handleBack"
+    tools:context=".ChatPage">
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="80dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:onClick="handleBack"
+        android:text="Back"
+        app:layout_constraintEnd_toStartOf="@+id/chat_header"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chat_header"
+        android:layout_width="196dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="108dp"
+        android:text="@string/chat_window"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/back_btn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/msg_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/background_light"
+        android:text="@string/msg"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/msg_box"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chatLV"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/msg_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="Enter your message"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/msg_title"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="handleSend"
+        android:text="SEND"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toEndOf="@+id/msg_box" />
+
+    <ListView
+        android:id="@+id/chatLV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#E6E2E2"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/msg_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_header" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

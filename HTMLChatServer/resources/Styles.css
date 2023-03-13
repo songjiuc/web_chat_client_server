@@ -1,0 +1,54 @@
+h1{
+    text-align:center;
+    font-family: "Verdana";
+    font-weight: bold;
+    font-size: 25px;
+}
+
+h2{
+    text-align:center;
+    font-weight:bold;
+    font-size: 16px;
+}
+
+.aParent{
+    display: flex;
+}
+
+.scroll{
+    overflow-y:auto;
+}
+
+#userDiv{
+    flex:30%;
+    border:solid black 1px;
+    padding:3px;
+    border-spacing: 3px;
+    background-color:lightblue;
+    margin:5px;
+    height:500px;
+}
+#chatDiv{
+    flex:70%;
+    border:solid black 1px;
+    padding:3px;
+    border-spacing: 3px;
+    background-color:lightblue;
+    margin:5px;
+    height:500px;
+}
+
+label{
+    font-family: Arial Black;
+    text-align:center;
+    font-size:15px;
+}
+
+body{
+    background: azure;
+}
+
+textarea{
+    vertical-align: middle;
+}
+

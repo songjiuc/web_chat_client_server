@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW8 WebChat</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+<h1>Online Chat Room</h1>
+
+<div id="name">
+    <label>User name:</label>
+    <textarea id="username"></textarea>
+    <label>Room name:</label>
+    <textarea id="roomname"></textarea><br>
+</div>
+
+
+<div class="aParent">
+    <div id="userDiv" class="scroll">
+        <h2>People in Room</h2>
+        <blockquote id="emptyUserText">
+            &lt;Room is empty...&gt;
+        </blockquote>
+    </div>
+    <div id="chatDiv" class="scroll">
+        <blockquote id="emptyChatText">
+            Type in a User Name and Room Name (then
+            press &lt;Enter&gt;) to join the chat...
+        </blockquote>
+    </div>
+</div>
+
+<label>Message:</label>
+<textarea id="message"></textarea><br>
+
+
+<script type="text/javascript" src="hello.js"></script>
+
+</body>
+</html>
+</Doctype>
+

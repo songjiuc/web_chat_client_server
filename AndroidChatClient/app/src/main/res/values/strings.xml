@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndroidChatClient</string>
+    <string name="user_name">User Name</string>
+    <string name="room_name">Room Name</string>
+    <string name="main_header">Web Chat Login Page</string>
+    <string name="login_btn">Log In</string>
+    <string name="chat_window">Chat Window</string>
+    <string name="msg">Message</string>
+</resources>
